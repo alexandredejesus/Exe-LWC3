@@ -1,0 +1,11 @@
+<template>
+    <div>
+      <lightning-input label="Primeiro nome" value={dadosEmpresa.primeiroNome} onchange={handleInputChange}></lightning-input>
+      <lightning-input label="Sobrenome" value={dadosEmpresa.sobrenome} onchange={handleInputChange}></lightning-input>
+      <lightning-input label="E-mail" type="email" value={dadosEmpresa.email} onchange={handleInputChange}></lightning-input>
+      <lightning-input label="Website" type="url" value={dadosEmpresa.website} onchange={handleInputChange}></lightning-input>
+      <lightning-input label="Empresa" value={dadosEmpresa.empresa} onchange={handleInputChange}></lightning-input>
+      <lightning-input label="Receita anual" type="number" value={dadosEmpresa.receitaAnual} onchange={handleInputChange}></lightning-input>
+    </div>
+</template>
+  
