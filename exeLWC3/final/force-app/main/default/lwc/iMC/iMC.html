@@ -1,0 +1,10 @@
+<template>
+    <div>
+      <lightning-input label="Nome" value={nome} onchange={handleInputChange}></lightning-input>
+      <lightning-input label="Peso (kg)" type="number" min="0" value={peso} onchange={handleInputChange}></lightning-input>
+      <lightning-input label="Altura (m)" type="number" min="0" value={altura} onchange={handleInputChange}></lightning-input>
+      <div if:true={imc}>Seu IMC é {imc}</div>
+      <lightning-button label="Calcular IMC" variant="brand" onclick={calcularIMC}></lightning-button>
+    </div>
+</template>
+  
